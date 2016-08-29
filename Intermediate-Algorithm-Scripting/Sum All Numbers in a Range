@@ -1,0 +1,14 @@
+
+    function sumAll(arr) {
+      i = Math.min(arr[0], arr[1]);
+      myArr = [];
+  
+      while (i <= Math.max(arr[0], arr[1])){
+        myArr.push(i);
+        i++;
+      }
+  
+      return myArr.reduce(function(total, value){
+        return total + value;
+      });
+    }
