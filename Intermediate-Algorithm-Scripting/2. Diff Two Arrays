@@ -1,0 +1,17 @@
+
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  newArr = arr1.filter(function(value){
+                        if (arr2.indexOf(value) == -1){
+    return true;
+  }
+                        });
+  
+  return newArr.concat(
+    arr2.filter(function(value){
+                if (arr1.indexOf(value) == -1){
+      return true;
+    }
+    })
+  );
+}
