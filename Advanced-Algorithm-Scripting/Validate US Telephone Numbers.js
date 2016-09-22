@@ -8,7 +8,7 @@ function telephoneCheck(str) {
 \d{4} - checks for "####" (# - number)
 g - flag for "greedy" */
 
-  var re =/^(1?\s?)(\(\d{3}\)|\d{3})[\s\-]\d{3}[\s\-]\d{4}$/g;
+  var re =/^(1?\s?)?(\(\d{3}\)|\d{3})[\s\-]\d{3}[\s\-]\d{4}$/g;
   return re.test(str); //returns true if string matches RegExp
 }
 
