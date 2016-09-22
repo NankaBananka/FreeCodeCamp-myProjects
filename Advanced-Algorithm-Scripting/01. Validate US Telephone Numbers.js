@@ -9,6 +9,9 @@ function telephoneCheck(str) {
 g - flag for "greedy" */
 
   var re =/^(1?\s?)?(\(\d{3}\)|\d{3})[\s\-]\d{3}[\s\-]\d{4}$/g;
+  
+  //var re =/^(1?\s?)?(\(\d{3}\)|\d{3})([\s\-]?\d{3}){2}\d$/g; other variant to do this
+  
   return re.test(str); //returns true if string matches RegExp
 }
 
