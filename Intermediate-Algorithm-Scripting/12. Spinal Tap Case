@@ -1,0 +1,7 @@
+function spinalCase(str) {
+  var re1 = /([a-z])([A-Z])/g,
+      re2 = /[\s\_]/g;
+  
+  return str.replace(re1, '$1 $2').replace(re2, "-").toLowerCase();
+  
+}
