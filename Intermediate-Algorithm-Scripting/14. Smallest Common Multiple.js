@@ -22,7 +22,9 @@ function smallestCommons(arr) {
   function scm(x, y){
     return (x * y)/gcd(x, y);
   }
-    
+   
+  //implementing reduce method to array to find LCM for all elements 
+  //(The gcd is an associative function: gcd(a, gcd(b, c)) = gcd(gcd(a, b), c) )
   return newarr.reduce(function(previous, current){
     var gcdStart = gcd(previous, current);
     console.log(scm(previous, current));
